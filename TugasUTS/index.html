@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Keren</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.7);
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a{
+    color:#fff;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:url('../TugasUTS/assets/img/Tim.jpeg') no-repeat center/cover;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#00c6ff;
+    color:#fff;
+    border-radius:20px;
+    text-decoration:none;
+}
+.cv-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cv {
+    padding: 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.cv:hover {
+    transform: translateY(-5px);
+}
+
+.cv h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4facfe;
+}
+
+.cv-section {
+    margin-bottom: 15px;
+}
+
+.cv-section h3 {
+    font-size: 14px;
+    border-bottom: 2px solid #4facfe;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+
+.cv-section p, .cv-section li {
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+.cv-section ul {
+    padding-left: 18px;
+}
+section{
+    padding:80px 20px;
+}
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #8b8e8f;
+    letter-spacing: 2px;
+}
+.cv-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* bikin bulat */
+    display: block;
+    margin: 0 auto 10px; /* posisi tengah */
+    border: 3px solid #4facfe;
+}
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:#ffffff10;
+    backdrop-filter:blur(10px);
+    padding:20px;
+    border-radius:15px;
+    margin:20px 0;
+}
+
+img{
+    width:100%;
+    border-radius:10px;
+}
+
+.profile{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.profile img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* jarak icon dan teks */
+    text-decoration: none;
+    color: black;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    color: #4facfe;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+@media(max-width:600px){
+    .profile{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div>Portfolio</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#project">CV Team</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <div>
+        <h1>WELCOME TO OUR TEAM'S PORTFOLIO</h1>
+        <p>“Push yourself, because no one else is going to do it for you”</p>
+        <a href="#about" class="btn">Mulai</a>
+    </div>
+</header>
+
+<section id="about">
+    <h1 class="section-title">TENTANG KAMI</h1>
+    <div class="container">
+        <div class="card profile">
+            <img src="../TugasUTS/assets/img/Martin.jpeg">
+            <div class="social">
+                <h2>JULIUS MARTINUS KOWARIN</h2>
+                <p>TTL: TUAL , 05-06-2004</p>
+                <p>Email: Martin@gmail.com</p>
+                <a href="https://instagram.com/2967_martin" target="_blank">
+                    <img src="../TugasUTS/assets/img/ig.jpeg">
+                    2967_martin
+                </a>
+                <a href="https://facebook.com/Martin Kowarin" target="_blank">
+                    <img src="../TugasUTS/assets/img/fb.jpeg">
+                    Martin Kowarin
+                </a>
+            </div>
+            <div>
+                 <a href="#project1" class="btn">My CV</a>
+            </div>
+        </div>
+    </div>
+    <br>
+        <div class="container">
+        <div class="card profile">
+            <img src="../TugasUTS/assets/img/Helena.jpeg">
+            <div class="social">
+                <h2>HELENA LATULOLA</h2>
+                <p>TTL: TEPA , 07-03-2005</p>
+                <p>Email: Helena@gmail.com</p>
+                <a href="https://instagram.com/enn2004" target="_blank">
+                    <img src="../TugasUTS/assets/img/ig.jpeg">
+                    enn2004
+                </a>
+                <a href="https://facebook.com/helen latulola" target="_blank">
+                    <img src="../TugasUTS/assets/img/fb.jpeg">
+                    helen latulola
+                </a>
+            </div>
+            <div>
+                 <a href="#project2" class="btn">My CV</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card profile">
+            <img src="../TugasUTS/assets/img/Helmi.jpeg">
+            <div class="social">
+                <h2>HELMI HUKUM</h2>
+                <p>TTL: DOBO, 01-05-2004</p>
+                <p>Email: Helmi@gmail.com</p>
+                <a href="https://instagram.com/muckenohukum" target="_blank">
+                    <img src="../TugasUTS/assets/img/ig.jpeg">
+                    muckenohukum
+                </a>
+                <a href="https://facebook.com/Muckenohukum" target="_blank">
+                    <img src="../TugasUTS/assets/img/fb.jpeg">
+                    Muckenohukum
+                </a>
+            </div>
+            <div>
+                 <a href="#project3" class="btn">My CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="project">
+    <h1 class="section-title">CURRICULUM VITAE TEAM</h1>
+
+    <div class="cv-container">
+
+        <!-- CV 1 -->
+        <div class="card cv">
+            <img src="../TugasUTS/assets/img/Martin.jpeg" class="cv-img">
+            <h2 id="project1">Julius M. Kowarin</h2>
+
+            <div class="cv-section">
+                <h3>👤 Data Pribadi</h3>
+                <p>Tual, 05 Juni 2004</p>
+                <p>martin@gmail.com</p>
+                <p>082249448865</p>
+            </div>
+
+            <div class="cv-section">
+                <h3>🎓 Pendidikan</h3>
+                <p>S1 - IAKN Ambon (2023 - Sekarang)</p>
+                <p>SMA Kristen Anugerah (2021)</p>
+            </div>
+
+            <div class="cv-section">
+                <h3>💻 Kemampuan</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>MySQL dasar</li>
+                    <li>Analisis Sistem</li>
+                    <li>Figma / Canva</li>
+                </ul>
+            </div>
+
+            <div class="cv-section">
+                <h3>🎯 Tujuan</h3>
+                <p>Mahasiswa yang siap berkembang di dunia kerja.</p>
+            </div>
+        </div>
+
+        <!-- CV 2 -->
+        <div class="card cv">
+            <img src="../TugasUTS/assets/img/Helena.jpeg" class="cv-img">
+            <h2 id="project2">Helena Latulola</h2>
+
+            <div class="cv-section">
+                <h3>👤 Data Pribadi</h3>
+                <p>Tepa, 07 Maret 2005</p>
+                <p>helena@gmail.com</p>
+                <p>081211041484</p>
+            </div>
+
+            <div class="cv-section">
+                <h3>🎓 Pendidikan</h3>
+                <p>S1 - IAKN Ambon (2023 - Sekarang)</p>
+                <p>SMK PGRI Ahanari (2023)</p>
+            </div>
+
+            <div class="cv-section">
+                <h3>💻 Kemampuan</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Database dasar</li>
+                    <li>Problem solving</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+
+            <div class="cv-section">
+                <h3>🎯 Tujuan</h3>
+                <p>Berkomitmen berkembang dan berkontribusi.</p>
+            </div>
+        </div>
+
+        <!-- CV 3 -->
+        <div class="card cv">
+            <img src="../TugasUTS/assets/img/Helmi.jpeg" class="cv-img">
+            <h2 id="project3">Helmi Hukum</h2>
+
+            <div class="cv-section">
+                <h3>👤 Data Pribadi</h3>
+                <p>Dobo, 01 Mei 2000</p>
+                <p>helmi@gmail.com</p>
+                <p>081244577700</p>
+            </div>
+
+            <div class="cv-section">
+                <h3>🎓 Pendidikan</h3>
+                <p>S1 - IAKN Ambon (2023 - Sekarang)</p>
+                <p>SMA Negeri 1 Dobo (2018)</p>
+            </div>
+
+            <div class="cv-section">
+                <h3>💻 Kemampuan</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>MySQL dasar</li>
+                    <li>UI Design dasar</li>
+                    <li>Komunikasi</li>
+                </ul>
+            </div>
+
+            <div class="cv-section">
+                <h3>🎯 Tujuan</h3>
+                <p>Mengembangkan potensi dan pengalaman kerja.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="contact">
+    <h1 class="section-title">KONTAK KAMI</h1>
+    <div class="card">
+        <p>Alamat: Kota Ambon</p>
+
+        <p>
+            Email: 
+            <a href="mailto:kelompokpw7@gmail.com">kelompokpw7@gmail.com</a>
+        </p>
+
+        <div class="social">
+            <a href="https://instagram.com" target="_blank">
+                <img src="../TugasUTS/assets/img/ig.jpeg">
+                Instagram
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+                <img src="../TugasUTS/assets/img/fb.jpeg">
+                Facebook
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Portofolio</p>
+</footer>
+
+</body>
+</html>
