@@ -35,7 +35,7 @@ header{
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:url('../TugasUTS/assets/img/Tim.jpeg') no-repeat center/cover;
+    background:url('assets/img/Tim.jpeg') no-repeat center/cover;
 }
 
 header h1{
@@ -51,6 +51,7 @@ header h1{
     border-radius:20px;
     text-decoration:none;
 }
+
 .cv-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -64,6 +65,7 @@ header h1{
     background: #ffffff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
+    color:#000;
 }
 
 .cv:hover {
@@ -95,9 +97,11 @@ header h1{
 .cv-section ul {
     padding-left: 18px;
 }
+
 section{
     padding:80px 20px;
 }
+
 .section-title {
     text-align: center;
     font-size: 28px;
@@ -105,15 +109,17 @@ section{
     color: #8b8e8f;
     letter-spacing: 2px;
 }
+
 .cv-img {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    border-radius: 50%; /* bikin bulat */
+    border-radius: 50%;
     display: block;
-    margin: 0 auto 10px; /* posisi tengah */
+    margin: 0 auto 10px;
     border: 3px solid #4facfe;
 }
+
 .container{
     max-width:1000px;
     margin:auto;
@@ -148,7 +154,7 @@ img{
 .social a {
     display: flex;
     align-items: center;
-    gap: 8px; /* jarak icon dan teks */
+    gap: 8px;
     text-decoration: none;
     color: black;
     margin-top: 8px;
@@ -182,87 +188,63 @@ footer{
 <nav>
     <div>Portfolio</div>
     <div>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#project">CV Team</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<header>
+<header id="home">
     <div>
-        <h1>WELCOME TO OUR TEAM'S PORTFOLIO</h1>
-        <p>“Push yourself, because no one else is going to do it for you”</p>
+        <h1>WELCOME TO OUR TEAM</h1>
+        <p>Push yourself, because no one else will</p>
         <a href="#about" class="btn">Mulai</a>
     </div>
 </header>
 
 <section id="about">
     <h1 class="section-title">TENTANG KAMI</h1>
+
     <div class="container">
         <div class="card profile">
-            <img src="TugasUTS/assets/img/Martin.jpeg">
+            <img src="assets/img/Martin.jpeg">
             <div class="social">
                 <h2>JULIUS MARTINUS KOWARIN</h2>
-                <p>TTL: TUAL , 05-06-2004</p>
                 <p>Email: Martin@gmail.com</p>
                 <a href="https://instagram.com/2967_martin" target="_blank">
-                    <img src="TugasUTS/assets/img/ig.jpeg">
-                    2967_martin
+                    <img src="assets/img/ig.jpeg">2967_martin
                 </a>
-                <a href="https://facebook.com/Martin Kowarin" target="_blank">
-                    <img src="TugasUTS/assets/img/fb.jpeg">
-                    Martin Kowarin
-                </a>
-            </div>
-            <div>
-                 <a href="#project1" class="btn">My CV</a>
             </div>
         </div>
     </div>
-    <br>
-        <div class="container">
-        <div class="card profile">
-            <img src="TugasUTS/assets/img/Helena.jpeg">
-            <div class="social">
-                <h2>HELENA LATULOLA</h2>
-                <p>TTL: TEPA , 07-03-2005</p>
-                <p>Email: Helena@gmail.com</p>
-                <a href="https://instagram.com/enn2004" target="_blank">
-                    <img src="TugasUTS/assets/img/ig.jpeg">
-                    enn2004
-                </a>
-                <a href="https://facebook.com/helen latulola" target="_blank">
-                    <img src="TugasUTS/assets/img/fb.jpeg">
-                    helen latulola
-                </a>
-            </div>
-            <div>
-                 <a href="#project2" class="btn">My CV</a>
-            </div>
-        </div>
-    </div>
-    <br>
+
     <div class="container">
         <div class="card profile">
-            <img src="TugasUTS/assets/img/Helmi.jpeg">
+            <img src="assets/img/Helena.jpeg">
             <div class="social">
-                <h2>HELMI HUKUM</h2>
-                <p>TTL: DOBO, 01-05-2004</p>
-                <p>Email: Helmi@gmail.com</p>
-                <a href="https://instagram.com/muckenohukum" target="_blank">
-                    <img src="TugasUTS/assets/img/ig.jpeg">
-                    muckenohukum
+                <h2>HELENA LATULOLA</h2>
+                <p>Email: Helena@gmail.com</p>
+                <a href="https://instagram.com/enn2004" target="_blank">
+                    <img src="assets/img/ig.jpeg">enn2004
                 </a>
-                <a href="https://facebook.com/Muckenohukum" target="_blank">
-                    <img src="TugasUTS/assets/img/fb.jpeg">
-                    Muckenohukum
-                </a>
-            </div>
-            <div>
-                 <a href="#project3" class="btn">My CV</a>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="card profile">
+            <img src="assets/img/Helmi.jpeg">
+            <div class="social">
+                <h2>HELMI HUKUM</h2>
+                <p>Email: Helmi@gmail.com</p>
+                <a href="https://instagram.com/muckenohukum" target="_blank">
+                    <img src="assets/img/ig.jpeg">muckenohukum
+                </a>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <section id="project">
@@ -272,8 +254,8 @@ footer{
 
         <!-- CV 1 -->
         <div class="card cv">
-            <img src="TugasUTS/assets/img/Martin.jpeg" class="cv-img">
-            <h2 id="project1">Julius M. Kowarin</h2>
+            <img src="assets/img/Martin.jpeg" class="cv-img">
+            <h2>Julius M. Kowarin</h2>
 
             <div class="cv-section">
                 <h3>👤 Data Pribadi</h3>
@@ -306,8 +288,8 @@ footer{
 
         <!-- CV 2 -->
         <div class="card cv">
-            <img src="TugasUTS/assets/img/Helena.jpeg" class="cv-img">
-            <h2 id="project2">Helena Latulola</h2>
+            <img src="assets/img/Helena.jpeg" class="cv-img">
+            <h2>Helena Latulola</h2>
 
             <div class="cv-section">
                 <h3>👤 Data Pribadi</h3>
@@ -340,8 +322,8 @@ footer{
 
         <!-- CV 3 -->
         <div class="card cv">
-            <img src="TugasUTS/assets/img/Helmi.jpeg" class="cv-img">
-            <h2 id="project3">Helmi Hukum</h2>
+            <img src="assets/img/Helmi.jpeg" class="cv-img">
+            <h2>Helmi Hukum</h2>
 
             <div class="cv-section">
                 <h3>👤 Data Pribadi</h3>
@@ -373,27 +355,20 @@ footer{
         </div>
 
     </div>
-
 </section>
+
 <section id="contact">
     <h1 class="section-title">KONTAK KAMI</h1>
     <div class="card">
-        <p>Alamat: Kota Ambon</p>
-
-        <p>
-            Email: 
-            <a href="mailto:kelompokpw7@gmail.com">kelompokpw7@gmail.com</a>
-        </p>
+        <p>Email: kelompokpw7@gmail.com</p>
 
         <div class="social">
             <a href="https://instagram.com" target="_blank">
-                <img src="TugasUTS/assets/img/ig.jpeg">
-                Instagram
+                <img src="assets/img/ig.jpeg">Instagram
             </a>
 
             <a href="https://facebook.com" target="_blank">
-                <img src="TugasUTS/assets/img/fb.jpeg">
-                Facebook
+                <img src="assets/img/fb.jpeg">Facebook
             </a>
         </div>
     </div>
